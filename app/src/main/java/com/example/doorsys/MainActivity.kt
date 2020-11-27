@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
             //the code is then saved to the firebase
             val database = FirebaseDatabase.getInstance()
             val codePin = database.getReference("DoorPIN")
-            codePin.setValue(code.toString())
+            codePin.setValue(pcode.toString())
 
             //changing message in the button
             proceedButton.text = "SUCCESSFULLY BOOKED"
